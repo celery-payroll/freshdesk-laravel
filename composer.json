@@ -21,6 +21,13 @@
             "homepage": "http://mpclarkson.github.io/"
         }
     ],
+    "repositories":
+    [
+        {
+            "type": "vcs",
+            "url": "https://github.com/celery-payroll/freshdesk-php-sdk"
+        }
+    ],
     "minimum-stability": "dev",
     "autoload" : {
         "psr-4": {

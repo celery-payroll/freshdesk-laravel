@@ -145,4 +145,50 @@ class Api {
     {
         return $this->api->slaPolicies;
     }
+
+    /**
+     * Check if a specific header exists in the API response.
+     *
+     * @param string $name
+     * @return string|null
+     */
+    public function hasHeader($name)
+    {
+        return $this->api->hasHeader($name);
+    }
+
+    /**
+     * Get the value of a response header.
+     *
+     * @param string $name
+     * @return string|null
+     */
+    public function getHeader($name)
+    {
+        return $this->api->getHeader($name);
+    }
+
+    /**
+     * @return \Freshdesk\Resources\Solution
+     */
+    public function solutionCategories($endPoint = null, $locale = null)
+    {
+        return $this->api->solutions->categories($endPoint, $locale);
+    }
+
+    /**
+     * @return \Freshdesk\Resources\Solution
+     */
+    public function solutionFolders($id, $endPoint = null, $locale = null)
+    {
+        return $this->api->solutions->folders($id, $endPoint, $locale);
+    }
+
+    /**
+     * @return \Freshdesk\Resources\Solution
+     */
+    public function solutionArticles($id, $endPoint = null, $locale = null)
+    {
+        return $this->api->solutions->articles($id, $endPoint, $locale);
+    }
 }
