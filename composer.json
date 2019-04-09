@@ -4,8 +4,15 @@
     "homepage": "https://github.com/mpclarkson/freshdesk-laravel",
     "keywords": ["freshdesk", "customer service", "support", "help desk", "api", "laravel"],
     "type": "laravel-package",
+    "repositories":
+    [
+        {
+            "type": "vcs",
+            "url": "https://github.com/celery-payroll/freshdesk-php-sdk"
+        }
+    ],
     "require": {
-        "mpclarkson/freshdesk-php-sdk": "0.3.*",
+        "mpclarkson/freshdesk-php-sdk": "dev-master",
         "illuminate/support": "~5.1"
     },
     "require-dev": {
@@ -19,13 +26,6 @@
             "name": "Matthew Clarkson",
             "email": "mpclarkson@gmail.com",
             "homepage": "http://mpclarkson.github.io/"
-        }
-    ],
-    "repositories":
-    [
-        {
-            "type": "vcs",
-            "url": "https://github.com/celery-payroll/freshdesk-php-sdk"
         }
     ],
     "minimum-stability": "dev",
