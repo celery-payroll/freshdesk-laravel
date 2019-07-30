@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "mpclarkson/freshdesk-php-sdk": "dev-solutions",
+        "mpclarkson/freshdesk-php-sdk": "1.*",
         "illuminate/support": "~5.1"
     },
     "require-dev": {
